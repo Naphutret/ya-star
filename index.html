@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css/5style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>Responsive E-Commerce Page</title>
+</head>
+<body>
+
+<header class="p-3">
+    <div class="d-flex justify-content-between align-items-center">
+        <div class="menu" data-bs-toggle="modal" data-bs-target="#drop">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="logo">
+            <img src="/image/logo.png" alt="Logo" class="img-fluid">
+        </div>
+        <div class="d-flex align-items-center">
+            <div class="search mx-2">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="bell mx-2">
+                <i class="fa-solid fa-bell"></i>
+            </div>
+            <div class="setting mx-2">
+                <i class="fa-solid fa-gear"></i>
+            </div>
+            <div class="login mx-2">
+                <p class="mb-0">Login</p>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Modal -->
+<div class="modal fade" id="drop" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Shop Preference</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Select a category you prefer. You can change this later in the Settings.</p>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" name="gender" id="women" value="women">
+                    <label class="form-check-label" for="women">Women</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" name="gender" id="men" value="men">
+                    <label class="form-check-label" for="men">Men</label>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary w-100" data-bs-dismiss="modal">OK</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Carousel slide -->
+<section>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/image/sline.png" class="d-block w-100 img-fluid" alt="Slide 1">
+            </div>
+            <div class="carousel-item">
+                <img src="/image/sline.png" class="d-block w-100 img-fluid" alt="Slide 2">
+            </div>
+            <div class="carousel-item">
+                <img src="/image/sline.png" class="d-block w-100 img-fluid" alt="Slide 3">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</section>
+
+<!-- Promotion Section -->
+<div class="new p-3 text-center ">
+    <p class="box-new">
+        🛒 FREE Cash Voucher 🛍<br>
+        $3 Voucher on min spend of $40 (Use code AUG03)<br>
+        $5 Voucher on min spend of $50 (Use code AUG05)<br>
+        $10 Voucher on min spend of $80 (Use code AUG10)<br>
+        Available only on Mobile App & Website 📲
+    </p>
+</div>
+
+<!-- Content photo -->
+<div class="content my-5">
+    <div class="row g-4">
+        <!-- Image 1 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card">
+                <img src="/image/image1.jpg" class="card-img-top img-fluid" alt="Knitted T-Shirt">
+                <div class="card-body">
+                    <h4 class="card-title">$29.95</h4>
+                    <i class="fa-solid fa-bookmark"></i>
+                    <p class="card-text">Knitted T-Shirt</p>
+                </div>
+            </div>
+        </div>
+        <!-- Image 2 -->
+         <div class="row"></div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card">
+                <img src="/image/imgae2.jpg" class="card-img-top img-fluid" alt="Mini Dress">
+                <div class="card-body">
+                    <h4 class="card-title">$29.95</h4>
+                    <i class="fa-solid fa-bookmark"></i>
+                    <p class="card-text">Mini Dress</p>
+                </div>
+            </div>
+        </div>
+        <!-- Image 3 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card">
+                <img src="/image/image4.jpg" class="card-img-top img-fluid" alt="Cropped Jacket">
+                <div class="card-body">
+                    <h4 class="card-title">$29.95</h4>
+                    <i class="fa-solid fa-bookmark"></i>
+                    <p class="card-text">Cropped Jacket</p>
+                </div>
+            </div>
+        </div>
+        <!-- Image 4 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card">
+                <img src="/image/imgae2.jpg" class="card-img-top img-fluid" alt="Cropped Jacket">
+                <div class="card-body">
+                    <h4 class="card-title">$29.95</h4>
+                    <i class="fa-solid fa-bookmark"></i>
+                    <p class="card-text">Cropped Jacket</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer Section -->
+<footer class="py-4 bg-dark text-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-4 mb-4">
+                <h3>TEN11</h3>
+                <ul class="list-unstyled">
+                    <li>iOS App</li>
+                    <li>Android App</li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-4 mb-4">
+                <h3>FOLLOW US</h3>
+                <ul class="list-unstyled">
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>TikTok</li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-4 mb-4">
+                <h3>CONTACT US</h3>
+                <ul class="list-unstyled">
+                    <li>Email: support@ten11.com</li>
+                    <li>Phone: +1 800 123 4567</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd
